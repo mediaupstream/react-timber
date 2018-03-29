@@ -10,6 +10,21 @@
   },
   "author": "Derek Anderson <derek@mediaupstream.com> (http://mediaupstream.com)",
   "license": "MIT",
+  "repository": "https://github.com/mediaupstream/react-timber.git",
+  "keywords": [
+    "react",
+    "timber",
+    "react-timber",
+    "debug",
+    "debugging",
+    "debugger",
+    "log",
+    "logging",
+    "console",
+    "console.log",
+    "consolelog",
+    "pre"
+  ],
   "peerDependencies": {
     "react": "^16.2.0"
   },

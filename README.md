@@ -1,5 +1,7 @@
 # react-timber
 
+![Alt text](logo.png?raw=true "Timber")
+
 > Simple debug component for React
 
 ## Overview
@@ -18,15 +20,17 @@ npm i react-timber
 
 ## Usage
 
-Available Props:
+```js
+import Timber from 'react-timber'
+```
 
 | Prop       | Default Value |   Description |
 | ---------- | ------------- | ------------- |
 | consoleLog | false | When true Timber will only `console.log` the props |
 | hideLabel | false | When true the label is omitted |
-| className | null | class is applied to the wrapper `div` and `pre` tag |
-| style | null | inline styles are applied to the wrapper `div` and `pre` tag |
-| * | null | All other props are `console.log`'d or rendered in a `pre` tag. |
+| className |   | class is applied to the wrapper `div` and `pre` tag |
+| style |   | inline styles are applied to the wrapper `div` and `pre` tag |
+| * |    | All other props are `console.log`'d or rendered in a `pre` tag. |
 
 
 **Exapmle:**
