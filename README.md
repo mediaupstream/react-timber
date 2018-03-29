@@ -1,12 +1,12 @@
 # react-timber
 
-![Alt text](logo.png?raw=true "Timber")
+![Logo](logo.png?raw=true "Timber")
 
 > Simple debug component for React
 
 ## Overview
 
-Log prop values using `<pre><code>` or `console.log`
+A React component that outputs prop values wrapped in `<pre><code>` tags. Optionally you can `console.log` the prop values.
 
 ## Install
 
@@ -20,9 +20,15 @@ npm i react-timber
 
 ## Usage
 
+There are two **output modes**. By default `Timber` will render the passed `props` as a pretty printed JSON object inside `<pre><code>` tags. If you only want to log the `props` to the console you can pass the `consoleLog` prop.
+
 ```js
 import Timber from 'react-timber'
+const ExampleApp = () => <Timber foo="bar" consoleLog />
 ```
+![Example](example1.png?raw=true "Outputs to the Console")
+
+**Options:**
 
 | Prop       | Default Value |   Description |
 | ---------- | ------------- | ------------- |
@@ -63,8 +69,5 @@ class SomeComponent extends Component {
   }
 }
 ```
-
-
-
 
 ## License MIT
