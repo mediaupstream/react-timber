@@ -42,7 +42,7 @@ const ExampleApp = () => <Timber foo="bar" consoleLog />
 **Exapmle:**
 
 ```js
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Timber from 'react-timber'
 
 class SomeComponent extends Component {
@@ -60,13 +60,15 @@ class SomeComponent extends Component {
   }
   render() {
     return (
-      <Timber 
-        className="purple" 
-        PaulBunyan={this.state.selected} 
-      />
-      <Timber
-        lumberjacks={this.state.lumberjacks}
-      />
+      <Fragment>
+        <Timber 
+          className="purple" 
+          PaulBunyan={this.state.selected} 
+        />
+        <Timber
+          lumberjacks={this.state.lumberjacks}
+        />
+      </Fragment>
     )
   }
 }
