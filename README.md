@@ -26,7 +26,7 @@ There are two **output modes**. By default `Timber` will render the passed `prop
 import Timber from 'react-timber'
 const ExampleApp = () => <Timber foo="bar" consoleLog />
 ```
-![Example](example.png?raw=true "Outputs to the Console")
+![Example](example1.png?raw=true "Outputs to the Console")
 
 **Options:**
 
@@ -54,20 +54,23 @@ class SomeComponent extends Component {
       { name: 'Johnny Canuck', origin: 'Canada'},
     ],
     selected: { 
-      name: 'Big Joe Mufferaw', 
-      origin: 'Canada'
+      name: 'Paul Bunyan', 
+      origin: 'North America'
     }
   }
   render() {
     return (
       <Timber 
-        consoleLog 
-        PaulBunyan={this.state.selected}
+        className="purple" 
+        PaulBunyan={this.state.selected} 
+      />
+      <Timber
         lumberjacks={this.state.lumberjacks}
       />
     )
   }
 }
 ```
+![Example 2](example2.png?raw=true "Outputs to pre tag")
 
 ## License MIT
