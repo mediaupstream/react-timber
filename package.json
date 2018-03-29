@@ -1,7 +1,7 @@
 {
   "name": "react-timber",
   "version": "1.0.0",
-  "description": "A simple debug component for React",
+  "description": "Simple debug component for React",
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
