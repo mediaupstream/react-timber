@@ -26,7 +26,7 @@ There are two **output modes**. By default `Timber` will render the passed `prop
 import Timber from 'react-timber'
 const ExampleApp = () => <Timber foo="bar" consoleLog />
 ```
-![Example](example1.png?raw=true "Outputs to the Console")
+![Example](example.png?raw=true "Outputs to the Console")
 
 **Options:**
 
