@@ -1,0 +1,30 @@
+{
+  "name": "react-timber",
+  "version": "1.0.0",
+  "description": "A simple debug component for React",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": "Derek Anderson <derek@mediaupstream.com> (http://mediaupstream.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "webpack": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "semantic-release": "^15.1.4",
+    "webpack-cli": "^2.0.13"
+  }
+}
