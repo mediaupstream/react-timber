@@ -1,6 +1,6 @@
 {
   "name": "react-timber",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple debug component for React",
   "main": "build/index.js",
   "scripts": {
@@ -40,6 +40,6 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "semantic-release": "^15.1.4",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^3.1.1"
   }
 }
