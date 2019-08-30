@@ -42,35 +42,25 @@ const ExampleApp = () => <Timber foo="bar" consoleLog />
 **Exapmle:**
 
 ```js
-import React, { Component, Fragment } from 'react'
-import Timber from 'react-timber'
-
-class SomeComponent extends Component {
-  state = {
-    lumberjacks: [
-      { name: 'Big Joe Mufferaw', origin: 'Canada'}, 
-      { name: 'Paul Bunyan', origin: 'North America'}, 
-      { name: 'Log Diver', origin: 'Canada'},
-      { name: 'Johnny Canuck', origin: 'Canada'},
-    ],
-    selected: { 
-      name: 'Paul Bunyan', 
-      origin: 'North America'
-    }
-  }
-  render() {
-    return (
-      <Fragment>
-        <Timber 
+const SomeComponent = () => {
+  const lumberjacks = [
+    { name: 'Big Joe Mufferaw', origin: 'Canada'}, 
+    { name: 'Paul Bunyan', origin: 'North America'}, 
+    { name: 'Log Diver', origin: 'Canada'},
+    { name: 'Johnny Canuck', origin: 'Canada'},
+  ]
+  const selected = lumberjacks.find(n => n.name === 'Paul Bunyan')
+  return (
+    <div>
+      <Timber 
           className="purple" 
-          PaulBunyan={this.state.selected} 
+          PaulBunyan={selected} 
         />
         <Timber
-          lumberjacks={this.state.lumberjacks}
+          lumberjacks={lumberjacks}
         />
-      </Fragment>
-    )
-  }
+    </div>
+  )
 }
 ```
 ![Example2](example2.png?raw=true "Outputs to pre tag")
